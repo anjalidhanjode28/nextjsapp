@@ -1,12 +1,32 @@
-import React from 'react';
-import styles from "./page.module.css"
+import React from "react";
+import styles from "./page.module.css";
+import Link from "next/link";
+import Image from "next/image";
 
-function Blog() {
+
+const Blog = () => {
+ 
   return (
-    <div className={styles.container}>
-    Blog
+    <div className={styles.mainContainer}>
+   
+        <Link href="/blog/testId" className={styles.container}>
+          <div className={styles.imageContainer}>
+            <Image
+              src="https://images.pexels.com/photos/31547093/pexels-photo-31547093/free-photo-of-majestic-white-swan-gliding-on-calm-water.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              alt=""
+              width={400}
+              height={250}
+              className={styles.image}
+            />
+          </div>
+          <div className={styles.content}>
+            <h1 className={styles.title}>title</h1>
+            <p className={styles.desc}>efefr</p>
+          </div>
+        </Link>
+   
     </div>
   );
-}
+};
 
 export default Blog;

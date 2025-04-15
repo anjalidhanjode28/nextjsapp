@@ -23,5 +23,5 @@ a {
  display: flex;
  flex-direction: column;
  justify-content: space-between;
- border: 2px solid red;
+ border: 5px solid red;
 }
